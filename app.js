@@ -1,18 +1,46 @@
 let story = {
     step1: {
         image: "https://hd.wallpaperswide.com/thumbs/cute_monster_amused_illustration-t2.jpg",
-        text: "you wake up surrounded by monsters... what should you do?",
-        btn1: { text: "adventure", step: "step2" },
-        btn2: { text: "run away", step: "step3" }
+        text: "youre surrounded by monsters... what should you do?",
+        btn1: { text: "try to fight them", step: "step7" },
+        btn2: { text: "adventure", step: "step3" }
     },
+
     step2: {
         image: "https://c4.wallpaperflare.com/wallpaper/688/334/516/adorable-baby-monster-feeling-hungry-wallpaper-preview.jpg",
-        text: "you choose to adventure the surrounding area, but something doesnt feel right.",
-        btn1: { text: "fight the monsters", step: "step3" },
-        btn2: { text: "try to run away", step: "step3" }
+        text: "you found some food! \n should you try it...?",
+        btn1: { text: "try the food", step: "step4" },
+        btn2: { text: "keep walking", step: "step5" }
     },
+    
     step3: {
+        image: "https://i.pinimg.com/1200x/8f/c4/d3/8fc4d36eec0ad9d5e506800370187bd0.jpg",
+        text: "you choose to adventure the surrounding area, you found what looks to be a bunch of mushrooms.",
+        btn1: { text: "go back", step: "step7" },
+        btn2: { text: "go towards the mushrooms", step: "step2" }
+    },
+
+    step4: {
         image: "https://hd.wallpaperswide.com/thumbs/cute_baby_monster_first_tooth_illustration-t2.jpg",
+        text: "you choose to try the food... did it atleast taste good?",
+        btn1: { text: "keep walking", step: "step5" },
+        btn2: { text: "try to fight the monsters", step: "step7" }
+    },
+
+    step5: {
+        image: "https://i.pinimg.com/1200x/c3/bd/d9/c3bdd9cff5e6f21334bc06d346f7beab.jpg",
+        text: "you kept walking and found a way out!",
+        btn1: { text: "leave", step: "step6" },
+        btn2: { text: "stay", step: "step7" }
+    },
+
+    step6: {
+        image: "https://i.pinimg.com/736x/5a/ed/19/5aed19a22d8379fd226f2205f3fdf8f2.jpg",
+        text: "youve escaped, dont let whatever that was happen again!",
+    },
+
+    step7: {
+        image: "https://i.pinimg.com/1200x/40/fd/ef/40fdefed8797bbb45d3d43f63df492c2.jpg",
         text: "the monsters got you. better luck next time..."
     }
 };
